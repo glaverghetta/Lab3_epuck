@@ -101,9 +101,9 @@ def turnUntil(target, offset):
 # Returns "west" or "east" or "north" (should only be used if robot is facing approximately west or east or north)
 def getFacing():
     imuReading = getIMU()
-    if imuReading >= 88 and imuReading <= 92:
+    if imuReading >= 87.5 and imuReading <= 92.5:
         return "west"
-    elif imuReading <= 2 or imuReading >= 358:
+    elif imuReading <= 2.5 or imuReading >= 357.5:
         return "north"
     else:
         return "east"
